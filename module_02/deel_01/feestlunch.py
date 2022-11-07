@@ -9,5 +9,3 @@ totaal_geld_croissantjes = aantal_croissantjes + geld_croissantjes
 totaal_geld_stokbroden = aantal_stokbroden + geld_stokbroden
 feestlunch_geld = totaal_geld_croissantjes + totaal_geld_stokbroden - totaal_korting
 print(f'De feestlunch kost je bij de bakker {feestlunch_geld / 100} euro voor de {aantal_croissantjes} croissantjes en de {aantal_stokbroden} stokbroden als de {aantal_kortingsbonnen} kortingsbonnen nog geldig zijn!')
-
-# test

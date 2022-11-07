@@ -3,7 +3,7 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 4')
 
 # Jouw python instructies zet je vanaf hier:
-for x in range(1,5):
+for x in range(4):
     robotArm.grab()
     robotArm.moveRight()
     robotArm.moveRight()
@@ -13,7 +13,7 @@ for x in range(1,5):
 robotArm.grab()
 robotArm.moveRight()
 robotArm.drop()
-for x in range(1,5):
+for x in range(4):
     robotArm.moveRight()
     robotArm.grab()
     robotArm.moveLeft()

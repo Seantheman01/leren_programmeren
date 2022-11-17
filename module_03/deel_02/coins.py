@@ -9,7 +9,7 @@ paid = int(float(input('Paid amount: ')) * 100) #
 change = paid - toPay #
 
 if change > 0: #
-  coinValue = 50 #
+  coinValue = 500 #
   
   while change > 0 and coinValue > 0: #
     nrCoins = change // coinValue #

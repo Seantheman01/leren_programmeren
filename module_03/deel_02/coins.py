@@ -41,7 +41,17 @@ if change > 0: #
 
 if change > 0: # this tells you that if the change is bigger than 0, it will print the underneath
   print('Change not returned: ', str(change) + ' cents')
+  
   while change > 0:
-    print(change)
+    print(f'''Aantal 5 euro:
+Aantal 2 euro:
+Aantal 1 euro:
+Aantal 50 cent:
+Aantal 20 cent:
+Aantal 10 cent:
+Aantal 5 cent:
+Aantal 2 cent:
+Aantal 1 cent:''')
+    
 else:
   print('done')

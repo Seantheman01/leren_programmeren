@@ -41,6 +41,7 @@ if change > 0: #
 
 if change > 0: # this tells you that if the change is bigger than 0, it will print the underneath
   print('Change not returned: ', str(change) + ' cents')
-  print(f'{coinValue}')
+  while change > 0:
+    print(change)
 else:
   print('done')

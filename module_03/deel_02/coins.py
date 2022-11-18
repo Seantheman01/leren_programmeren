@@ -1,7 +1,7 @@
-# name of student: 
-# number of student:
-# purpose of program: 
-# function of program:
+# name of student: Sean
+# number of student: 99073596
+# purpose of program: to see how many cents you get back
+# function of program: 
 # structure of program: 
 
 toPay = int(float(input('Amount to pay: '))* 100) #

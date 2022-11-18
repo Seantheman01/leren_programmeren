@@ -4,6 +4,7 @@
 # function of program: 
 # structure of program: 
 
+aantal = ' '
 toPay = int(float(input('Amount to pay: '))* 100) #
 paid = int(float(input('Paid amount: ')) * 100) #
 change = paid - toPay # this tells you how much the change is
@@ -43,15 +44,7 @@ if change > 0: # this tells you that if the change is bigger than 0, it will pri
   print('Change not returned: ', str(change) + ' cents')
   
   while change > 0:
-    print(f'''Aantal 5 euro:
-Aantal 2 euro:
-Aantal 1 euro:
-Aantal 50 cent:
-Aantal 20 cent:
-Aantal 10 cent:
-Aantal 5 cent:
-Aantal 2 cent:
-Aantal 1 cent:''')
+      aantal = ' '
     
 else:
   print('done')

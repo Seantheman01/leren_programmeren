@@ -6,18 +6,18 @@
 
 toPay = int(float(input('Amount to pay: '))* 100) #
 paid = int(float(input('Paid amount: ')) * 100) #
-change = paid - toPay #
+change = paid - toPay # this tells you how much the change is
 
 if change > 0: #
   coinValue = 500 # starts with 500 cents
     
   while change > 0 and coinValue > 0: # checks if there are coins to give
-    nrCoins = change // coinValue #
+    nrCoins = change // coinValue # this calculates the amount of coins
 
     if nrCoins > 0: #
       print('return maximal ', nrCoins, ' coins of ', coinValue, ' cents!' ) #
       nrCoinsReturned = int(input('How many coins of ' + str(coinValue) +  ' cents did you return? ')) #
-      change -= nrCoinsReturned * coinValue #
+      change -= nrCoinsReturned * coinValue # this calculates how many cents you get back
 
 # comment on code below:
     if coinValue == 500:
@@ -39,7 +39,8 @@ if change > 0: #
     else:
       coinValue = 0
 
-if change > 0: #
+if change > 0: # this tells you that if the change is bigger than 0, it will print the underneath
   print('Change not returned: ', str(change) + ' cents')
+  print('')
 else:
   print('done')

@@ -5,8 +5,8 @@
 # structure of program: 
 
 aantal = ' '
-toPay = int(float(input('Amount to pay: '))* 100) #
-paid = int(float(input('Paid amount: ')) * 100) #
+toPay = int(float(input('Amount to pay: '))* 100) # here you have to type how much you have to pay
+paid = int(float(input('Paid amount: ')) * 100) # here you have to type how much you have paid
 change = paid - toPay # this tells you how much the change is
 
 if change > 0: #
@@ -42,6 +42,9 @@ if change > 0: #
 
 if change > 0: # this tells you that if the change is bigger than 0, it will print the underneath
   print('Change not returned: ', str(change) + ' cents')
+    
+  aantal += toPay
+  print(f'{aantal}')
     
 else:
   print('done')

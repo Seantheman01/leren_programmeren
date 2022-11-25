@@ -3,13 +3,19 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 11')
 
 # Jouw python instructies zet je vanaf hier:
-for x in range(9):
-    robotArm.grab()
-    color = robotArm.scan()
-    robotArm.drop()
+robotArm.speed = 1
+for x in range(8):
     robotArm.moveRight()
-    if color == 'white':
+for y in range(9):
+    robotArm.grab()
+    kleur = robotArm.scan()
+    if kleur == 'white':
         robotArm.moveRight()
-        robotArm.drop()   
+        robotArm.drop()
+        robotArm.moveLeft()
+        robotArm.moveLeft()
+    else:
+        robotArm.drop()
+        robotArm.moveLeft()
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()

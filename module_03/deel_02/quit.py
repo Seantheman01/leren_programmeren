@@ -1,7 +1,7 @@
-a = 0
+aantal = 0
 while True:
     vraag = input("?")
-    a += 1
+    aantal += 1
     if vraag == 'quit':    
         break
-print(a)
+print(aantal)

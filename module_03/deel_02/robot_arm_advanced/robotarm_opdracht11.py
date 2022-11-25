@@ -17,5 +17,6 @@ for y in range(9):
     else:
         robotArm.drop()
         robotArm.moveLeft()
+        
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()

@@ -11,7 +11,8 @@ for y in range(9):
     robotArm.grab()
     kleur = robotArm.scan()
     if kleur == 'red':
-        robotArm.moveRight()
+        for z in range():
+            robotArm.moveLeft
     else:
         robotArm.drop()
         robotArm.moveLeft()

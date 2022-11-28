@@ -9,15 +9,15 @@ toPay = int(float(input('Amount to pay: '))* 100) # here you have to type how mu
 paid = int(float(input('Paid amount: ')) * 100) # here you have to type how much you have paid
 change = paid - toPay # this tells you how much the change is
 
-if change > 0: # if the change is bigger than 0, it will run codes underneath
+if change > 0: # if the change is bigger than 0, it will run the codes underneath
   coinValue = 500 # starts with 500 cents
     
   while change > 0 and coinValue > 0: # checks if there are coins to give
     nrCoins = change // coinValue # this calculates the amount of coins
 
-    if nrCoins > 0: #
+    if nrCoins > 0: # if the change is bigger than 0, it will run te codes underneath
       print('return maximal ', nrCoins, ' coins of ', coinValue, ' cents!' ) # this prints the amount of cents you need to return
-      nrCoinsReturned = int(input('How many coins of ' + str(coinValue) +  ' cents did you return? ')) #
+      nrCoinsReturned = int(input('How many coins of ' + str(coinValue) +  ' cents did you return? ')) # here you have to type how many cents you returned
       change -= nrCoinsReturned * coinValue # this calculates how many cents you get back
 
 # comment on code below:

@@ -42,8 +42,8 @@ if change > 0: # if the change is bigger than 0, it will run the codes underneat
       coinValue = 0
 
 if change > 0: # this tells you that if the change is bigger than 0, it will print the underneath
-  print("""You did not return enough change.
-        Change not returned: ', str(change) + ' cents""")
+  print("You did not return enough change.")
+  print('Change not returned: ', str(change) + ' cents')
     
   aantal += toPay
   print(f'{aantal}')

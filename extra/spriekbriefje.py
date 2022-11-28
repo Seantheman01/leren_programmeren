@@ -41,3 +41,8 @@
 # conditie lever True of False op
 
 # abs maakt een positief getal negatief, en een negatief getal positief
+
+# for woord in ("Sean", "goedemiddag", ",", "hoe", "gaat", "het?")
+#   print(woord)
+#   for a in woord:
+#        print(a)

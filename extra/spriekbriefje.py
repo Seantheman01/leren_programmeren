@@ -3,31 +3,31 @@
 # datatypes
 # string = woord of zin
 ########################################################################
-woord = 'hallo'  # mag ook met dubbele komma's
-woord = "hallo"
+# woord = 'hallo'  # mag ook met dubbele komma's
+# woord = "hallo"
 # met drie quotes krijg je een multiline string
-lange_zin = '''dit is een erg lange zin,
-die verdeeld is over meerdere regels.'''
+# lange_zin = '''dit is een erg lange zin,
+# die verdeeld is over meerdere regels.'''
 
 # int = geheel getal
-x = 6
+# x = 6
 # float = kommagetal (let op punt ipv komma)
-y = 6.5
+# y = 6.5
 
 ##########################################################################
 # built in functies bif's (ongeveer 70 in Python)
 ##########################################################################
 # input = stel een vraag en sla het antwoord op. Geeft altijd een string terug
-antwoord = input('Hoe heet je?')
+# antwoord = input('Hoe heet je?')
 
 # print = stuurt een string naar de commandline
-print('hallo', antwoord)  # of
-print('hallo ' + antwoord)  # of
-print(f'hallo {antwoord}, leuk kennis te maken!')
+# print('hallo', antwoord)  # of
+# print('hallo ' + antwoord)  # of
+# print(f'hallo {antwoord}, leuk kennis te maken!')
 
 # int zijn hele getallen
 # int() = zet om naar naar int
-getal = int('6')
+# getal = int('6')
 
 # met een for-loop weet je het getal al
 # met een while-loop weet je het getal nog niet. Dit combineer je met een conditie

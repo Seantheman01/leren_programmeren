@@ -4,7 +4,7 @@ robotArm = RobotArm()
 robotArm.randomLevel(1,7)
 
 # Jouw python instructies zet je vanaf hier:
-robotArm.speed = 1
+robotArm.speed = 3
 a = 1
 while True:
     robotArm.grab()

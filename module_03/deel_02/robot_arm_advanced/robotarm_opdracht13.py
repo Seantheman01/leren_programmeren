@@ -4,14 +4,20 @@ robotArm = RobotArm()
 robotArm.randomLevel(1,7)
 
 # Jouw python instructies zet je vanaf hier:
-robotArm.speed = 3
-x = 0
-while x > 0:
+robotArm.speed = 1
+a = 1
+while True:
     robotArm.grab()
     kleur = robotArm.scan()
-    if kleur == 'white' or kleur == 'red' or kleur == 'blue' or kleur == 'green' or kleur == 'yellow':
-        robotArm.moveRight()
+    if kleur != '':
+        for x in range(a):
+            robotArm.moveRight()
         robotArm.drop()
+        for y in range(a):
+            robotArm.moveLeft()
+        a += 1
+    else:
+        break
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()

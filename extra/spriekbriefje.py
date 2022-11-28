@@ -39,3 +39,5 @@ getal = int('6')
 # voorbeelden van een boolian: and, or, not
 
 # conditie lever True of False op
+
+# abs maakt een positief getal negatief, en een negatief getal positief

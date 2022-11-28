@@ -18,6 +18,7 @@ if change > 0: # if the change is bigger than 0, it will run the codes underneat
     if nrCoins > 0: # if the change is bigger than 0, it will run te codes underneath
       print('return maximal ', nrCoins, ' coins of ', coinValue, ' cents!' ) # this prints the amount of cents you need to return
       nrCoinsReturned = int(input('How many coins of ' + str(coinValue) +  ' cents did you return? ')) # here you have to type how many cents you returned
+      (f"Gave {nrCoinsReturned} of {coinValue / 100} euros")# this shows how many coins you returned
       change -= nrCoinsReturned * coinValue # this calculates how many cents you get back
 
 # comment on code below:
@@ -41,7 +42,8 @@ if change > 0: # if the change is bigger than 0, it will run the codes underneat
       coinValue = 0
 
 if change > 0: # this tells you that if the change is bigger than 0, it will print the underneath
-  print('Change not returned: ', str(change) + ' cents')
+  print("""You did not return enough change.
+        Change not returned: ', str(change) + ' cents""")
     
   aantal += toPay
   print(f'{aantal}')

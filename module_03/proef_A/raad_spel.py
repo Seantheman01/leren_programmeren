@@ -13,4 +13,9 @@ for x in range(10):
         print("Dat is het getal!")
         punten += 1
         print(f"punten: {punten}")
-        input("Nog een ronde? ")
+        verder = input("Nog een ronde? ")
+        if verder == 'ja':
+            getal_typen = int(input("Typ een getal: "))
+        elif verder == 'nee':
+            print(f"punten: {punten}")
+            break

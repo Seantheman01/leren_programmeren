@@ -16,5 +16,5 @@ for x in range(10):
         if verder == 'nee':
             print(f"punten: {punten}")
             break
-        elif verder == 'ja':
-            
+        elif verder != 'ja' and verder != 'nee':
+            input("Kies ja of nee: ")

@@ -17,4 +17,4 @@ for x in range(10):
             print(f"punten: {punten}")
             break
         elif verder == 'ja':
-            getal_typen = int(input("Typ een getal: "))
+            

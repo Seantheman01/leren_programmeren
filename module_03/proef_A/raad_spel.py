@@ -1,12 +1,17 @@
-punten = 0
 import random
+
+
+punten = 0
 getal = random.randint(1,1000)
+
+print(getal)
 begin = input("Wil je beginnen? ")
 for x in range(20):
     if begin == 'nee':
         break
     elif begin == 'ja':
         for y in range(10):
+            print(getal)
             getal_typen = int(input("Typ een getal: "))
             if getal_typen != getal:
                 if getal_typen < getal:
@@ -20,8 +25,9 @@ for x in range(20):
                 verder = input("Nog een ronde? ")
                 if verder == 'nee':
                     print(f"punten: {punten}")
-                    break
+                    quit()
                 elif verder != 'ja' and verder != 'nee':
                     input("Kies ja of nee: ")
     else:
         input("Typ ja of nee: ")
+print(f"{punten}")

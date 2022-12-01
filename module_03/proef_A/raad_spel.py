@@ -16,8 +16,16 @@ for x in range(20):
             if getal_typen != getal:
                 if getal_typen < getal:
                     print("hoger")
+                    if abs(50):
+                        print("Je bent warm! ")
+                    elif abs(20):
+                        print("Je bent heel warm! ")
                 elif getal_typen > getal:
                     print("lager")
+                    if abs(50):
+                        print("Je bent warm! ")
+                    elif abs(20):
+                        print("Je bent heel warm! ")
             elif getal_typen == getal:
                 print("Geraden!")
                 punten += 1

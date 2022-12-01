@@ -11,4 +11,6 @@ for x in range(10):
             print("lager")
     elif getal_typen == getal:
         print("Dat is het getal!")
+        punten += 1
+        print(f"punten: {punten}")
         input("Nog een ronde? ")

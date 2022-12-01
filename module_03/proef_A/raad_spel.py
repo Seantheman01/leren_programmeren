@@ -1,0 +1,1 @@
+getal = int(input("Noem een getal: "))

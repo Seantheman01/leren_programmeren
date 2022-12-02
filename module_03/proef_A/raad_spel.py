@@ -6,12 +6,9 @@ verschil = 0
 
 begin = input("Wil je beginnen? ")
 for x in range(20):
-    if begin == 'nee':
-        print("Oh, jammer...")
-        break
-    elif begin == 'ja':
+    if begin == 'ja':
+        getal = random.randint(1,1000)
         for y in range(10):
-            getal = random.randint(1,1000)
             print(getal)
             getal_typen = int(input("Typ een getal: "))
             verschil = abs(getal_typen - getal)
@@ -23,7 +20,7 @@ for x in range(20):
                         print("Je bent heel warm! ")
                     elif verschil <= 50:
                         print("Je bent warm! ")
-                        
+                        s
                 elif getal_typen > getal:
                     print("lager")
                     if verschil <= 20:
@@ -50,9 +47,9 @@ for x in range(20):
                     
             else:
                 input("Typ een getal in: ")
+            
+    elif begin == 'nee':
+        print('O, jammer...')
+        
     else:
         input("Typ ja of nee: ")
-print(f"{punten}")
-
-if x == 20:
-    print("Klaar")

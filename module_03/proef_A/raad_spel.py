@@ -38,6 +38,7 @@ for x in range(20):
                 
                         if kansen == 10:
                             print("Je hebt het niet kunnen raden. ")
+                            verder = input("Nog een ronde? ")
                         
                 elif getal_typen >= 1000:
                     input("Dat is te hoog! Typ een ander getal: ")
@@ -68,7 +69,3 @@ for x in range(20):
         
     else:
         begin = input("Typ ja of nee: ")
-
-    if kansen == 10:
-        print("Je hebt het niet kunnen raden. ")
-        verder = input("Nog een ronde? ")

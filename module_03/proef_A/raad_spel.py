@@ -18,6 +18,7 @@ for x in range(20):
             if getal_typen != getal:
                 if getal_typen < getal:
                     print("hoger")
+                    kansen += 1
                     if verschil <= 20:
                         print("Je bent heel warm! ")
                         kansen += 1
@@ -27,17 +28,23 @@ for x in range(20):
                         
                 elif getal_typen > getal:
                     print("lager")
+                    kansen += 1
                     if verschil <= 20:
                         print("Je bent heel warm! ")
                         kansen += 1
                     elif verschil <= 50:
                         print("Je bent warm! ")
                         kansen += 1
+                
+                        if kansen == 10:
+                            print("Je hebt het niet kunnen raden. ")
                         
                 elif getal_typen >= 1000:
                     input("Dat is te hoog! Typ een ander getal: ")
+                    kansen += 1
                 elif getal_typen <= 1:
                     input("Dat is te laag! Typ een ander getal: ")
+                    kansen += 1
 
             elif getal_typen == getal:
                 print("Geraden!")
@@ -45,16 +52,13 @@ for x in range(20):
                 print(f"punten: {punten}")
                 ronden += 1
                 
-                if ronden == 10:
-                    print("Je hebt het niet kunnen raden. ")
-                
                 verder = input("Nog een ronde? ")
                 if verder == 'nee':
                     print(f"Totale punten: {punten}")
                     quit()
                 elif verder != 'ja' and verder != 'nee':
                     input("Kies ja of nee: ")
-                    
+                
             else:
                 input("Typ een getal in: ")
             
@@ -63,4 +67,8 @@ for x in range(20):
         break
         
     else:
-        input("Typ ja of nee: ")
+        begin = input("Typ ja of nee: ")
+
+    if kansen == 10:
+        print("Je hebt het niet kunnen raden. ")
+        verder = input("Nog een ronde? ")

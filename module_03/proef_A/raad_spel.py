@@ -3,6 +3,8 @@ import random
 
 punten = 0
 verschil = 0
+ronden = 0
+kansen = 0
 
 begin = input("Wil je beginnen? ")
 for x in range(20):
@@ -18,25 +20,33 @@ for x in range(20):
                     print("hoger")
                     if verschil <= 20:
                         print("Je bent heel warm! ")
+                        kansen += 1
                     elif verschil <= 50:
                         print("Je bent warm! ")
+                        kansen += 1
                         
                 elif getal_typen > getal:
                     print("lager")
                     if verschil <= 20:
                         print("Je bent heel warm! ")
+                        kansen += 1
                     elif verschil <= 50:
                         print("Je bent warm! ")
+                        kansen += 1
                         
                 elif getal_typen >= 1000:
-                    input("Dat is te hoog! ")
+                    input("Dat is te hoog! Typ een ander getal: ")
                 elif getal_typen <= 1:
-                    input("Dat is te laag! ")
+                    input("Dat is te laag! Typ een ander getal: ")
 
             elif getal_typen == getal:
                 print("Geraden!")
                 punten += 1
                 print(f"punten: {punten}")
+                ronden += 1
+                
+                if ronden == 10:
+                    print("Je hebt het niet kunnen raden. ")
                 
                 verder = input("Nog een ronde? ")
                 if verder == 'nee':
@@ -50,6 +60,7 @@ for x in range(20):
             
     elif begin == 'nee':
         print('O, jammer...')
+        break
         
     else:
         input("Typ ja of nee: ")

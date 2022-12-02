@@ -20,7 +20,7 @@ for x in range(20):
                         print("Je bent heel warm! ")
                     elif verschil <= 50:
                         print("Je bent warm! ")
-                        s
+                        
                 elif getal_typen > getal:
                     print("lager")
                     if verschil <= 20:

@@ -16,11 +16,11 @@ for x in range(RONDES):
     elif begin == 'ja':
         for y in range(POGINGEN):
             getal_typen = int(input("Typ een getal: "))
+            
             if getal_typen != getal:
-                
                 if getal_typen < getal:
                     print("hoger")
-                    if abs(50):
+                    if abs(getal_typen - 50):
                         print("Je bent warm! ")
                     elif abs(20):
                         print("Je bent heel warm! ")
@@ -36,7 +36,7 @@ for x in range(RONDES):
                     input("Dat is te hoog! ")
                 elif getal_typen <= 1:
                     input("Dat is te laag! ")
-                    
+
             elif getal_typen == getal:
                 print("Geraden!")
                 punten += 1

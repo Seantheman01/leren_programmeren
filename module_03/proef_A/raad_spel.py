@@ -39,12 +39,6 @@ for x in range(20):
                 print(f"punten: {punten}")
                 break
             
-            if kansen == 10:
-                rondes += 1
-                print("Je hebt het niet kunnen raden.")
-                print(f"Het getal was: {verschil}")
-                break
-            
         verder = input("Nog een ronde? ")
         if verder == 'nee':
             print(f"Totale punten: {punten}")

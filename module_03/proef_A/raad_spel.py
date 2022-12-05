@@ -30,6 +30,15 @@ for x in range(20):
                     elif verschil <= 50:
                         print("Je bent warm! ")
                         
+                elif getal_typen >= 1000:
+                    getal_typen = input("Dat is te hoog! ")
+                    
+                elif getal_typen <= 1:
+                    getal_typen = input("Dat is te laag! ")
+                    
+                else:
+                    getal_typen = int(input("Typ een getal: "))
+                    
             if getal_typen == getal:
                 print("Geraden!")
                 punten += 1

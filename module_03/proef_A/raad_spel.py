@@ -57,6 +57,6 @@ for x in range(20):
     else:
         begin = input("Typ ja of nee: ")
         
-    if rondes == 20:
-        print(f"Totale punten: {punten}")
-        quit()
+if rondes == 20:
+    print(f"Totale punten: {punten}")
+    quit()

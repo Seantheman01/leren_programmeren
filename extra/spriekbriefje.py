@@ -34,7 +34,7 @@
 
 # met een syntax kan je bijhouden wat je moet schrijven
 
-# expressie is een som (operator)
+# expressie is een som/operator
 # voobeelden van datatypes: int, float, str, bool, list
 # voorbeelden van een boolian: and, or, not
 

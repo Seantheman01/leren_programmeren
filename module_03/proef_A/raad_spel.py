@@ -10,7 +10,6 @@ begin = input("Wil je beginnen? ")
 for x in range(20):
     if begin == 'ja':
         getal = random.randint(1,1000)
-        print(getal)
         for y in range(10):
             getal_typen = int(input("Typ een getal: "))
             verschil = abs(getal_typen - getal)

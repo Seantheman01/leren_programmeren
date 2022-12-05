@@ -11,3 +11,5 @@ for val in mijn_dict.values():
     
 for ke in mijn_dict.keys():
     print(ke) # hiermee print die de keys
+    
+print(dir(mijn_dict))

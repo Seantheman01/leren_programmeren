@@ -1,6 +1,5 @@
 import random
 
-
 punten = 0
 verschil = 0
 rondes = 0
@@ -44,7 +43,7 @@ for x in range(20):
             quit()
         elif verder != 'ja' and verder != 'nee':
             input("Kies ja of nee: ")
-            
+                 
     elif begin == 'nee':
         print('O, jammer...')
         break

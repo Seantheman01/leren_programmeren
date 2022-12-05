@@ -46,3 +46,15 @@
 #   print(woord)
 #   for a in woord:
 #        print(a)
+
+# bij een tupl kan je niets toevoegen, bij een list wel
+
+# tupl = ()
+# list = []
+
+# for el in list:
+# er zitten elementen in el
+
+# antwoord = input("Voer ja of nee in: ")
+# if antwoord in ("ja", "nee")
+# dit kan je bijvoorbeeld gebruiken om een input te valideren

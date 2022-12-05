@@ -48,7 +48,7 @@ while rondes < 3:
                 print(f"punten: {punten}")
                 break
         
-        if rondes < 3:    
+        if rondes < 3:
             verder = input("Nog een ronde? ")
             if verder == 'nee':
                 print(f"Totale punten: {punten}")
@@ -63,4 +63,5 @@ while rondes < 3:
     else:
         begin = input("Typ ja of nee: ")
         
-print(f"Totale punten: {punten}")
+print(f"""EINDE!
+Totale punten: {punten}""")

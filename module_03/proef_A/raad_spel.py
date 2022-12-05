@@ -42,7 +42,7 @@ for x in range(20):
                 rondes += 1
                 print(f"punten: {punten}")
                 break
-                
+                  
         verder = input("Nog een ronde? ")
         if verder == 'nee':
             print(f"Totale punten: {punten}")

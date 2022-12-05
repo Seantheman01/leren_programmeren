@@ -13,3 +13,8 @@ for ke in mijn_dict.keys():
     print(ke) # hiermee print die de keys
     
 print(dir(mijn_dict))
+
+
+mijn_lijst = [1]
+
+print(dir(mijn_lijst))

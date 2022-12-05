@@ -22,6 +22,12 @@ while rondes < 20:
                     elif verschil <= 50:
                         print("Je bent warm! ")
                         
+                    elif getal_typen >= 1000:
+                        print("Dat is te hoog!")
+                        
+                    elif getal_typen <= 1:
+                        print("Dat is te laag!")
+                        
                 elif getal_typen > getal:
                     print("lager")
                     kansen += 1
@@ -30,11 +36,11 @@ while rondes < 20:
                     elif verschil <= 50:
                         print("Je bent warm! ")
                         
-                elif getal_typen >= 1000:
-                    getal_typen = input("Dat is te hoog! ")
-                    
-                elif getal_typen <= 1:
-                    getal_typen = input("Dat is te laag! ")
+                    elif getal_typen >= 1000:
+                        print("Dat is te hoog!")
+                        
+                    elif getal_typen <= 1:
+                        print("Dat is te laag!")
                     
             if getal_typen == getal:
                 print("Geraden!")

@@ -24,7 +24,6 @@ while rondes < 20:
                         
                     elif getal_typen >= 1000:
                         print("Dat is te hoog!")
-                        
                     elif getal_typen <= 1:
                         print("Dat is te laag!")
                         
@@ -38,7 +37,6 @@ while rondes < 20:
                         
                     elif getal_typen >= 1000:
                         print("Dat is te hoog!")
-                        
                     elif getal_typen <= 1:
                         print("Dat is te laag!")
                     

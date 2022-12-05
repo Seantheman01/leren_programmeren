@@ -59,4 +59,4 @@
 # if antwoord in ("ja", "nee")
 # dit kan je bijvoorbeeld gebruiken om een input te valideren
 
-# met dir krijg je een lijst met mogelijkheden
+# met dir krijg je een lijst met mogelijkheden/functies

@@ -6,11 +6,13 @@ rondes = 0
 kansen = 0
 
 begin = input("Wil je beginnen? ")
-while rondes < 20:
+while rondes < 3:
     if begin == 'ja':
         getal = random.randint(1,1000)
+        print(getal)
         while kansen < 10:
             getal_typen = int(input("Typ een getal: "))
+            rondes += 1
             verschil = abs(getal_typen - getal)
             
             if getal_typen != getal:
@@ -45,22 +47,20 @@ while rondes < 20:
                 punten += 1
                 print(f"punten: {punten}")
                 break
-                  
-        verder = input("Nog een ronde? ")
-        rondes += 1
-        if verder == 'nee':
-            print(f"Totale punten: {punten}")
-            quit()
-        elif verder != 'ja' and verder != 'nee':
-            input("Kies ja of nee: ")
+        
+        if rondes < 3:    
+            verder = input("Nog een ronde? ")
+            if verder == 'nee':
+                print(f"Totale punten: {punten}")
+                quit()
+            elif verder != 'ja' and verder != 'nee':
+                input("Kies ja of nee: ")
                  
     elif begin == 'nee':
         print('O, jammer...')
         break
-
+    
     else:
         begin = input("Typ ja of nee: ")
         
-if rondes == 20:
-    print(f"Totale punten: {punten}")
-    quit()
+print(f"Totale punten: {punten}")

@@ -58,3 +58,5 @@
 # antwoord = input("Voer ja of nee in: ")
 # if antwoord in ("ja", "nee")
 # dit kan je bijvoorbeeld gebruiken om een input te valideren
+
+# met dir krijg je een lijst met mogelijkheden

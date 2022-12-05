@@ -6,10 +6,10 @@ rondes = 0
 kansen = 0
 
 begin = input("Wil je beginnen? ")
-for x in range(20):
+while rondes < 20:
     if begin == 'ja':
         getal = random.randint(1,1000)
-        for y in range(10):
+        while kansen < 10:
             getal_typen = int(input("Typ een getal: "))
             verschil = abs(getal_typen - getal)
             

@@ -43,11 +43,11 @@ while rondes < 20:
             if getal_typen == getal:
                 print("Geraden!")
                 punten += 1
-                rondes += 1
                 print(f"punten: {punten}")
                 break
                   
         verder = input("Nog een ronde? ")
+        rondes += 1
         if verder == 'nee':
             print(f"Totale punten: {punten}")
             quit()

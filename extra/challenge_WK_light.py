@@ -1,16 +1,15 @@
-land1 = input("Noem het eerste land dat speelt in groep A: ")
-land2 = input("Noem het tweede land dat speelt in groep A: ")
-land3 = input("Noem het derde land dat speelt in groep A: ")
+LANDEN = 3
+for x in range(LANDEN):
+    LANDEN = input("Noem een land dat speelt in groep A: ")
 
-print(f"""Wedstrijd |'thuis'|'uit'| Doelpunten land 1 | Doelpunten land 2 | Winnaar
-1         | {land1}    | {land2}  | 2                 | 0                 | {land1}
-2         | {land2}    | {land3}  | 1                 | 2                 | {land3}
-3         | {land1}    | {land3}  | 3                 | 1                 | {land1} """)
+score = 0
+for y in range(3):
+    score += 1
+    wed1_score = input(f"Wat is de score van {score}e land in de 2e wedstrijd?")
 
 
-print(f"""Wedstrijd {land1} - {land2} eindigde in: 2 - 0
-Overzicht groep 
-Land | Doelsalo (gemaakt - tegen) | Puntentotaal
-{land1}   | 2 - {land2}                     | 3
-{land2}   | 0 - {land1}                     | -3
-{land3}   | 0                          | 0 """)
+# print(f"""Wedstrijd {land1} - {land2} eindigde in: {wed1_land1} - {wed1_land2}
+# Overzicht groep A
+# {land1}:   Doelsaldo:  - {land2};   Puntentotaal:                 
+# {land2}:   Doelsaldo:  - {land1};   Puntentotaal:                         
+# {land3}:   Doelsaldo:           ;   Puntentotaal: """)

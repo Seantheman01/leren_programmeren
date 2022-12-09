@@ -4,21 +4,9 @@ kleuren = ("oranje", "blauw", "groen", "bruin")
 aantal = int(input("Hoeveel M&M's moeten er aan de zak toegevoegd worden? "))
 inhoud = []
 
+
 for x in range(aantal):
-    inhoud.append(random.choice[kleuren])
+    random_kleuren = random.randint(0,3)
+    inhoud.append(kleuren[random_kleuren])
     
-print("Oranje: ")
-for x in kleuren:
-    print(x)
-    
-print("Groen: ")
-for y in kleuren:
-    print(y)
-    
-print("Blauw: ")
-for z in kleuren:
-    print(z)
-    
-print("Bruin: ")
-for a in kleuren:
-    print(a)
+print(f"""Je hebt {inhoud} oranje, {inhoud} blauwe, {inhoud} groene en {inhoud} bruine M&M's.""")

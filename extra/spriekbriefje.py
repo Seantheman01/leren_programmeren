@@ -60,3 +60,7 @@
 # dit kan je bijvoorbeeld gebruiken om een input te valideren
 
 # met dir krijg je een lijst met mogelijkheden/functies
+
+# in een data opslag zitten keys en values
+
+# while True is een loop en een half

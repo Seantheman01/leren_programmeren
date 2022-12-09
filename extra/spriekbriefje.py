@@ -63,4 +63,4 @@
 
 # in een data opslag zitten keys en values
 
-# while True is een loop en een half
+# while True met een break erachter is een loop en een half (term)

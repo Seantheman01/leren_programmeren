@@ -10,4 +10,6 @@ while True:
             continue
 
 leeftijd = int(input("Wat is je leeftijd? "))
+
 namen_lijst[naam] = leeftijd
+print(namen_lijst)

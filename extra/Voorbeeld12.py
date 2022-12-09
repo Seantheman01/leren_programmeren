@@ -12,12 +12,10 @@ while True:
     leeftijd = int(input("Wat is je leeftijd? "))
     
     if leeftijd in namen_lijst.values():
-        print(f"Er zit al iemand in die {leeftijd} jaar oud is.")
-        
         for n, l in namen_lijst.item():
             if l == leeftijd:
                 break
-    print(f"{n} is al zo oud!")
+    print(f"Er zit al iemand in die {leeftijd} jaar oud is.")
     if input("Toch doorgaan? Typ ja of nee: ") != 'ja':
         continue
 
@@ -28,3 +26,4 @@ print(namen_lijst)
 
 leeftijd_lijst = list(namen_lijst.values())
 print(leeftijd_lijst)
+print(max(leeftijd_lijst))

@@ -25,5 +25,6 @@ while True:
 print(namen_lijst)
 
 leeftijd_lijst = list(namen_lijst.values())
+nieuwe_namen_lijst = list(namen_lijst.keys())
 print(leeftijd_lijst)
-print(max(leeftijd_lijst))
+print(nieuwe_namen_lijst[leeftijd_lijst.index(max(leeftijd_lijst))])

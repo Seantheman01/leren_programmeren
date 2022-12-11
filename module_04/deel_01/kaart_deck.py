@@ -7,9 +7,9 @@ kaarten = []
 for x in soorten:
     random_vorm = random.choice(vormen)
     kaarten.append(random_vorm)
+    
 print(f"""kaart 1:
 kaart 2:
-kaart 3:
 kaart 4:
 kaart 5:
 kaart 6:

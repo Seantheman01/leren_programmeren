@@ -10,6 +10,7 @@ for x in soorten:
     
 print(f"""kaart 1:
 kaart 2:
+kaart 3:
 kaart 4:
 kaart 5:
 kaart 6:

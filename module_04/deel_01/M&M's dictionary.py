@@ -8,4 +8,4 @@ for x in range(aantal):
     random_kleur = random.choice(kleuren)
     inhoud.append(random_kleur)
     
-print(inhoud)
+print("Je hebt {} rode, {} blauwe, {} groene, {} gele, en {} bruine M&M's.")

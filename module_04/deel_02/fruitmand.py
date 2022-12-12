@@ -1,4 +1,4 @@
-from fruitmand import fruitmand
+from fruitmand_download import fruitmand
 
 # appel_dict = fruitmand[1]
 # print(type(appel_dict))

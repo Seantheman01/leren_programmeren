@@ -13,4 +13,4 @@ for x in range(aantal):
         'bruin' : 1
     }
     
-print("Je hebt {} rode, {} blauwe, {} groene, {} gele, en {} bruine M&M's.")
+print(f"Je hebt {zak['rood']} rode, {zak['blauw']} blauwe, {zak['groen']} groene, {zak['geel']} gele, en {zak['bruin']} bruine M&M's.")

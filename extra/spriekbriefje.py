@@ -62,5 +62,6 @@
 # met dir krijg je een lijst met mogelijkheden/functies
 
 # in een data opslag zitten keys en values
+# print(appel_dict["name"]) de "name" is een key
 
 # while True met een break erachter is een loop en een half (term)

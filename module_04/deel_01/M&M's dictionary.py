@@ -13,4 +13,5 @@ for x in range(aantal):
         'bruin' : 1
     }
     
+
 print(f"Je hebt {zak['rood']} rode, {zak['blauw']} blauwe, {zak['groen']} groene, {zak['geel']} gele, en {zak['bruin']} bruine M&M's.")

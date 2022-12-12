@@ -1,19 +1,23 @@
 import random
 
-vormen = ('harten', 'klaveren', 'schoppen', 'ruiten')
-soorten = ('2', '3', '4', '5', '6', '7', '8', '9', '10', 'boer', 'vrouw','heer', 'aas', 'joker', 'joker')
+vormen = ['harten', 'klaveren', 'schoppen', 'ruiten']
+soorten = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'boer', 'vrouw','heer', 'aas']
+jokers = ['joker1', 'joker2']
 kaarten = []
+deck = 1
 
-for x in soorten:
-    random_vorm = random.choice(vormen)
-    kaarten.append(random_vorm)
+for x in range(len(jokers)):
+    kaarten.append(jokers[x])
+
+while len(kaarten) < 47:
+    random_getal = random.choice(vormen) + " " + random.choice(soorten)
+    if random_getal not in kaarten:
+        kaarten.append(random_getal)
+        
+while deck < 8:
+    random_kaart = random.choice(kaarten)
+    print(f"kaart {deck}: {random_kaart}")
+    kaarten.remove(random_kaart)
+    deck += 1
     
-print(f"""kaart 1:
-kaart 2:
-kaart 3:
-kaart 4:
-kaart 5:
-kaart 6:
-kaart 7:
-
-deck (47 kaarten): {kaarten}""")
+print(f"deck (47 kaarten): {kaarten}")

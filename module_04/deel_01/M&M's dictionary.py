@@ -8,7 +8,9 @@ for x in range(aantal):
     zak = {
         'rood' : 1,
         'blauw' : 1,
-        'geel' : 1
+        'groen' : 1,
+        'geel' : 1,
+        'bruin' : 1
     }
     
 print("Je hebt {} rode, {} blauwe, {} groene, {} gele, en {} bruine M&M's.")

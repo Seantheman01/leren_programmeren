@@ -8,4 +8,4 @@ for x in range(aantal):
     random_kleur = random.choice(kleuren)
     inhoud.append(random_kleur)
     
-print(inhoud)
+print(f"inhoud: {inhoud}")

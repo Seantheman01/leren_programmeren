@@ -1,6 +1,6 @@
 import random
 
-kleuren = ("rood", "blauw", "groen", "geel", "bruin")
+kleuren = ["rood", "blauw", "groen", "geel", "bruin"]
 aantal = int(input("Hoeveel M&M's moeten er aan de zak toegevoegd worden? "))
 inhoud = []
 

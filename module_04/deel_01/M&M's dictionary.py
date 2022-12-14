@@ -10,5 +10,4 @@ for x in kleuren:
 for x in range(aantal):
     inhoud[random.choice(kleuren)] += random.randint(0,2)
     
-
 print(inhoud)

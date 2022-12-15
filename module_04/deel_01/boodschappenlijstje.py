@@ -8,14 +8,16 @@ while True:
     hoeveelheid = int(input("Hoeveel heb je daarvan nodig? "))
     if hoeveelheid == '':
         int(input("Vul een getal in: "))
-        
+    
+    lijstje[boodschappen] = hoeveelheid
+    
     verder = input("Heb je meer spullen nodig? ")
     if verder == 'nee':
         break
     elif verder != 'ja' and verder != 'nee':
         input("Vul ja of nee in: ")
-    
-for x in boodschappen:
-    print("-[ BOODSCHAPPENLIJST ]-")
-    print(f"{x}x {lijstje[x]}")        
-    print("-----------------------")
+
+
+print("-[ BOODSCHAPPENLIJSTJE ]-")
+print(f"{lijstje}")
+print("-------------------------")

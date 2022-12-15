@@ -17,5 +17,5 @@ while True:
     
 for x in boodschappen:
     print("-[ BOODSCHAPPENLIJST ]-")
-    print(f"{x}x {lijstje}")        
+    print()        
     print("-----------------------")

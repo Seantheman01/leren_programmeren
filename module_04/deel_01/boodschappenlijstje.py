@@ -4,7 +4,7 @@ while True:
     boodschappen = input("Welke boodschappen heb je nodig? ")
     if boodschappen == '':
         input("Vul een product in: ")
-        
+
     hoeveelheid = int(input("Hoeveel heb je daarvan nodig? "))
     if hoeveelheid == '':
         int(input("Vul een getal in: "))
@@ -17,5 +17,5 @@ while True:
     
 for x in boodschappen:
     print("-[ BOODSCHAPPENLIJST ]-")
-    print()        
+    print(f"{x}x {lijstje[x]}")        
     print("-----------------------")

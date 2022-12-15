@@ -8,6 +8,6 @@ for x in kleuren:
     inhoud[x] = 0
     
 for x in range(aantal):
-    inhoud[random.choice(kleuren)] += random.randint(0,2)
+    inhoud[random.choice(kleuren)] += random.randint(0,3)
     
 print(inhoud)

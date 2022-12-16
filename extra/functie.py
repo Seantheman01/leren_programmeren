@@ -6,11 +6,11 @@ def vraag_woord(vraag: str):
             break
         
         except ValueError:
-            print("Je moet wel 'SEAN' invullen.")
+            print("Je moet wel een woord invullen.")
             continue
         
     return woord
 
-naam = vraag_woord("Vul 'SEAN' in: ")
+typ_woord = vraag_woord("Vul een woord in: ")
 
-print(naam.lower())
+print(typ_woord.lower())

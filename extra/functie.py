@@ -1,14 +1,7 @@
 def vraag_woord(vraag: str) -> str:
     
-    while True:
-        try:
-            woord = input(vraag)
-            break
-        
-        except ValueError:
-            print("Je moet wel een woord invullen.")
-            continue
-        
+    woord = input(vraag)
+
     return woord
 
 typ_woord = input("Vul een woord in: ").lower()

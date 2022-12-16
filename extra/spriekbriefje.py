@@ -1,8 +1,8 @@
 # commentaar start met een hekje
-########################################################################
+
 # datatypes
 # string = woord of zin
-########################################################################
+
 # woord = 'hallo'  # mag ook met dubbele komma's
 # woord = "hallo"
 # met drie quotes krijg je een multiline string
@@ -14,12 +14,12 @@
 # float = kommagetal (let op punt ipv komma)
 # y = 6.5
 
-##########################################################################
+
 # built in functies bif's (ongeveer 70 in Python)
-##########################################################################
+# voorbeelden: input, print, len, type, int str, boul
+
 # input = stel een vraag en sla het antwoord op. Geeft altijd een string terug
 # antwoord = input('Hoe heet je?')
-
 # print = stuurt een string naar de commandline
 # print('hallo', antwoord)  # of
 # print('hallo ' + antwoord)  # of
@@ -66,3 +66,5 @@
 
 # while True is een infinite loop
 # while True met een break erachter is een loop en een half (term)
+
+# def betekent definieer/maak aan

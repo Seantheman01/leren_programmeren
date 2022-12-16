@@ -6,7 +6,7 @@ def vraag_getal(vraag: str) -> int:
             break
         
         except ValueError:
-            print("Je moet wel een getal invullen: ")
+            print("Je moet wel een getal invullen.")
             continue   
         
     return getal

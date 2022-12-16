@@ -12,7 +12,7 @@ print(typ_woord)
 
 
 def vraag_naam(naam: str) -> str:
-    return f"hallo {naam}"
+    return f"Hallo {naam}!"
 
 antwoord = vraag_naam("Sean")
 print(antwoord)

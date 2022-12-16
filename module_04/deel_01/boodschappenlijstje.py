@@ -17,7 +17,9 @@ while True:
     elif verder != 'ja' and verder != 'nee':
         input("Vul ja of nee in: ")
 
-
-print("-[ BOODSCHAPPENLIJSTJE ]-")
-print(f"{lijstje}")
-print("-------------------------")
+    lijstje[boodschappen] += hoeveelheid
+    
+for x in lijstje:
+    print("-[ BOODSCHAPPENLIJSTJE ]-")
+    print(f"{lijstje[x]}x {x}")
+    print("-------------------------")

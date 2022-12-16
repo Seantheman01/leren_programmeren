@@ -5,7 +5,6 @@ def vraag_woord(vraag: str) -> str:
     return woord
 
 typ_woord = input("Vul een woord in: ").lower()
-
 print(typ_woord)
 
 # zin  = "Vul een woord in: "

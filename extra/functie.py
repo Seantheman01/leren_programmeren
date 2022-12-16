@@ -13,4 +13,4 @@ def vraag_woord(vraag: str):
 
 naam = vraag_woord("Vul 'SEAN' in: ")
 
-print('SEAN'.lower())
+print(naam.lower())

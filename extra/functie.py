@@ -1,4 +1,4 @@
-def vraag_woord(vraag: str):
+def vraag_woord(vraag: str) -> str:
     
     while True:
         try:
@@ -11,6 +11,9 @@ def vraag_woord(vraag: str):
         
     return woord
 
-typ_woord = vraag_woord("Vul een woord in: ")
+typ_woord = input("Vul een woord in: ").lower()
 
-print(typ_woord.lower())
+print(typ_woord)
+
+# zin  = "Vul een woord in: "
+# typ_woord = input(zin) zo kan het ook

@@ -1,4 +1,4 @@
-def vraag_woord(vraag: str) -> int:
+def vraag_woord(vraag: str):
     
     while True:
         try:
@@ -11,6 +11,6 @@ def vraag_woord(vraag: str) -> int:
         
     return woord
 
-input("Vul 'SEAN' in: ")
+naam = vraag_woord("Vul 'SEAN' in: ")
 
 print('SEAN'.lower())

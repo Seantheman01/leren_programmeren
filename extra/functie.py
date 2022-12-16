@@ -6,5 +6,11 @@ def vraag_woord(vraag: str) -> int:
             break
         
         except ValueError:
-            print("Je moet wel een woord invullen.")
+            print("Je moet wel 'SEAN' invullen.")
             continue
+        
+    return woord
+
+input("Vul 'SEAN' in: ")
+
+print('SEAN'.lower())

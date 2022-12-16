@@ -9,3 +9,10 @@ print(typ_woord)
 
 # zin  = "Vul een woord in: "
 # typ_woord = input(zin) zo kan het ook
+
+
+def vraag_naam(naam: str) -> str:
+    return f"hallo {naam}"
+
+antwoord = vraag_naam("Sean")
+print(antwoord)

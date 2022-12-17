@@ -1,11 +1,7 @@
 from fruitmand import fruitmand
 
-# appel_dict = fruitmand[1]
-# print(type(appel_dict))
-# print(appel_dict)
-# print(appel_dict["name"])
-
-for fruit in fruitmand:
-    print(type(fruit))
-    print(fruit['round'])
-    print(fruit)
+fruit_dict = fruitmand[1]
+print(type(fruit_dict))
+print(fruit_dict['name'])
+print(fruit_dict['round'])
+print(fruit_dict)

@@ -1,3 +1,4 @@
 from fruitmand import fruitmand
 
-input("Hoeveel? ")
+aantal = input("Hoeveel? ")
+print(aantal)

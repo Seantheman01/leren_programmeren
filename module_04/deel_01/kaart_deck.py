@@ -9,17 +9,18 @@ aantal = 1
 for x in range(len(jokers)):
     kaarten.append(jokers[x])
 
-while len(kaarten) < 47:
-    for x in vormen:
-        random_getal = vormen.append(soorten)
+for vorm in vormen:
+    print(vorm)
+    for soort in soorten:
+        print(soort)
+        print(vorm + " " + soort)
         
-    if random_getal not in kaarten: 
-        kaarten.append(random_getal)
-        
-while aantal < 8:
-    random_kaart = random.choice(kaarten)
-    print(f"kaart {aantal}: {random_kaart}")
-    kaarten.remove(random_kaart)
-    aantal += 1
+ 
     
-print(f"deck (47 kaarten): {random_getal}")
+# while aantal < 8:
+#     random_kaart = random.choice(kaarten)
+#     print(f"kaart {aantal}: {random_kaart}")
+#     kaarten.remove(random_kaart)
+#     aantal += 1
+    
+# print(f"deck (47 kaarten): {random_getal}")

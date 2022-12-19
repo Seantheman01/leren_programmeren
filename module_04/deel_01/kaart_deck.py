@@ -13,7 +13,7 @@ for vorm in vormen:
     for soort in soorten:
         print(vorm + " " + soort)
         
-
+   
     
 # while aantal < 8:
 #     random_kaart = random.choice(kaarten)

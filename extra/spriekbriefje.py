@@ -37,6 +37,7 @@
 # voobeelden van datatypes: int, float, str, bool, list
 # voorbeelden van een boolian: and, or, not
 
+# condities zijn de dingen voor de dubbele punt : in een if statement en een while loop
 # conditie lever True of False op
 
 # abs maakt een positief getal negatief, en een negatief getal positief

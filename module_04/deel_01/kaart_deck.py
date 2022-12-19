@@ -10,12 +10,10 @@ for x in range(len(jokers)):
     kaarten.append(jokers[x])
 
 for vorm in vormen:
-    print(vorm)
     for soort in soorten:
-        print(soort)
         print(vorm + " " + soort)
         
- 
+
     
 # while aantal < 8:
 #     random_kaart = random.choice(kaarten)

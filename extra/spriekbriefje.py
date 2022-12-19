@@ -1,6 +1,6 @@
 # commentaar start met een hekje
 
-# datatypes
+# variabele = stukje datatypes
 # string = woord of zin
 
 # woord = 'hallo'  # mag ook met dubbele komma's
@@ -13,7 +13,6 @@
 # x = 6
 # float = kommagetal (let op punt ipv komma)
 # y = 6.5
-
 
 # built in functies bif's (ongeveer 70 in Python)
 # voorbeelden: input, print, len, type, int str, boul

@@ -11,14 +11,14 @@ for x in range(len(jokers)):
 
 for vorm in vormen:
     for soort in soorten:
-        print(vorm + " " + soort)
+        kaarten.append(vorm + " " + soort)
         
+random.shuffle(kaarten)
 
+while aantal < 8:
+    random_kaart = random.choice(kaarten)
+    print(f"kaart {aantal}: {random_kaart}")
+    kaarten.remove(random_kaart)
+    aantal += 1
     
-# while aantal < 8:
-#     random_kaart = random.choice(kaarten)
-#     print(f"kaart {aantal}: {random_kaart}")
-#     kaarten.remove(random_kaart)
-#     aantal += 1
-    
-# print(f"deck (47 kaarten): {random_getal}")
+print(f"deck (47 kaarten): {kaarten}")

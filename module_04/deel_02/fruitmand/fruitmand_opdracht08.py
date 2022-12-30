@@ -5,4 +5,8 @@ fruitmand.append({'name' : 'watermeloen',
     'color' : 'green',
     'round' : True})
 
-print(fruitmand)
+gewicht = 0
+for x in fruitmand:
+    totaal_gewicht = gewicht + x['weight']
+    
+print(totaal_gewicht)

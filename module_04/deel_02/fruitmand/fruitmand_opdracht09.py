@@ -5,4 +5,5 @@ fruitmand.remove({'name' : 'druif',
     'color' : 'red',
     'round' : True})
 
-print(fruitmand)
+for x in fruitmand:
+    print()

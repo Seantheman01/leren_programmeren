@@ -1,3 +1,5 @@
 from fruitmand import fruitmand
 
-print(sorted(fruitmand, key=lambda a: (a['weight'])))
+for x in fruitmand:
+    gewicht = x['weight']
+    print(sorted(fruitmand, key=lambda a: (a[gewicht])))

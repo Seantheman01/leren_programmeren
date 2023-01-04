@@ -6,4 +6,5 @@ fruitmand.remove({'name' : 'druif',
     'round' : True})
 
 for x in fruitmand:
-    print()
+    alle_kleuren = x['color']
+    print(alle_kleuren)

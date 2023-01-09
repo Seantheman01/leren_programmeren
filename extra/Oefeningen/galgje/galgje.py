@@ -2,7 +2,16 @@ import random
 from data import *
 
 def random_woord_file(file_name: str) -> str:
-    random_woord = "eenvoudig"
+    try:
+        # import de data (woorden uit bestand)
+        # todo: uitbreiden met exception handling en een default woord indien file niet beschikbaar.
+        with open('woorden.txt', 'r') as file:
+            content = file.read()
+        #print(content)
+        woorden_lijst = content.split('\n')
+        random_woord = random.choice(woorden_lijst)
+    except:
+        random_woord = "eenvoudig"
     return random_woord
     
 # variabelen
@@ -14,14 +23,6 @@ goed_geraden_letters = []
 woorden_lijst = []
 max_raden = len(galgje_lijst)
 VERSION = "0.1 Draft"
-
-# import de data (woorden uit bestand)
-# todo: uitbreiden met exception handling en een default woord indien file niet beschikbaar.
-with open('woorden.txt', 'r') as file:
-    content = file.read()
-    #print(content)
-woorden_lijst = content.split('\n')
-te_raden_woord = random.choice(woorden_lijst)
 
 while True:
     print("Welkom bij Galgje TM")
@@ -95,4 +96,4 @@ while True:
         print("o, jammer...")
         break
     else:
-        input("Typ ja of nee in: ")
+    input("Typ ja of nee in: ")

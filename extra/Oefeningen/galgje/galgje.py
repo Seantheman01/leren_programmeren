@@ -1,6 +1,10 @@
 import random
 from data import *
 
+def random_woord_file(file_name: str) -> str:
+    random_woord = "eenvoudig"
+    return random_woord
+    
 # variabelen
 hoeveel_fout = 0
 te_raden_woord = ""
@@ -19,66 +23,76 @@ with open('woorden.txt', 'r') as file:
 woorden_lijst = content.split('\n')
 te_raden_woord = random.choice(woorden_lijst)
 
-print("Welkom bij Galgje TM")
-print("copyright 2022")
-print(f"versie: {VERSION}")
-print(f"---------------------------------------------")
-print(f"Je hebt {max_raden} kansen om het woord te raden!")
-print("")
-print(f"veel succes")
-print(f"---------------------------------------------")
+while True:
+    print("Welkom bij Galgje TM")
+    print("copyright 2022")
+    print(f"versie: {VERSION}")
+    print(f"---------------------------------------------")
+    print(f"Je hebt {max_raden} kansen om het woord te raden!")
+    print("")
+    print(f"veel succes")
+    print(f"---------------------------------------------")
 
 
-geraden_van_woord = "_" * len(te_raden_woord)
-print("#####################################################")
-print(f"Ronde {te_raden_woord}")
-print("#####################################################")
-while hoeveel_fout < max_raden:
-    print(f"Te raden woord: {geraden_van_woord}")
-    print("Voer de letter in die je wilt raden en toets enter...:")
+    geraden_van_woord = "_" * len(te_raden_woord)
+    print("#####################################################")
+    print(f"Ronde {te_raden_woord}")
+    print("#####################################################")
+    while hoeveel_fout < max_raden:
+        print(f"Te raden woord: {geraden_van_woord}")
+        print("Voer de letter in die je wilt raden en toets enter...:")
 
-    # vraag om één letter
-    letter = ""
-    while letter == "":
-        letter = input("Voer letter in: ")
+        # vraag om één letter
+        letter = ""
+        while letter == "":
+            letter = input("Voer letter in: ")
 
-        # valideer de input
-        if len(letter) != 1:
-            print("Je moet max. 1 letter invoeren!!!")
-            letter = ""
-        elif not letter.isalpha():
-            print("Je moet wel een letter invoeren!!!")
-            letter = ""
-        elif letter.isupper():
-            print("Geen hoofdletters a.u.b.")
-            letter = ""
+            # valideer de input
+            if len(letter) != 1:
+                print("Je moet max. 1 letter invoeren!!!")
+                letter = ""
+            elif not letter.isalpha():
+                print("Je moet wel een letter invoeren!!!")
+                letter = ""
+            elif letter.isupper():
+                print("Geen hoofdletters a.u.b.")
+                letter = ""
 
-    if letter in geraden_van_woord or letter in fout_geraden_letters:
-        print("Heb je al gehad, maar vooruit maar... zucht.")
-    elif letter in te_raden_woord:
-        print("Keurig, zit er in!")
-        goed_geraden_letters.append(letter)
-    else:
-        fout_geraden_letters.append(letter)
-        print("Helaas, zit er niet in :-(")
-        print(galgje_lijst[hoeveel_fout])
-        hoeveel_fout += 1
-
-
-    # regel dat je een woord krijgt om op het scherm te tonen.
-    geraden_van_woord = ''
-    for l_from_te_raden in te_raden_woord:
-        if l_from_te_raden in goed_geraden_letters:
-            geraden_van_woord += l_from_te_raden
+        if letter in geraden_van_woord or letter in fout_geraden_letters:
+            print("Heb je al gehad, maar vooruit maar... zucht.")
+        elif letter in te_raden_woord:
+            print("Keurig, zit er in!")
+            goed_geraden_letters.append(letter)
         else:
-            geraden_van_woord += "_"
+            fout_geraden_letters.append(letter)
+            print("Helaas, zit er niet in :-(")
+            print(galgje_lijst[hoeveel_fout])
+            hoeveel_fout += 1
 
-    if not "_" in geraden_van_woord:
-        print("Goed gedaan, woord geraden!!!")
+
+        # regel dat je een woord krijgt om op het scherm te tonen.
+        geraden_van_woord = ''
+        for l_from_te_raden in te_raden_woord:
+            if l_from_te_raden in goed_geraden_letters:
+                geraden_van_woord += l_from_te_raden
+            else:
+                geraden_van_woord += "_"
+
+        if not "_" in geraden_van_woord:
+            print("Goed gedaan, woord geraden!!!")
+            break
+
+    print("#####################################################")
+    print("Hartelijk dank voor het spelen van deze ronde.")
+    print(f"het woord was   : {te_raden_woord}")
+    print(f"door jou geraden: {geraden_van_woord}")
+    print("#####################################################")
+
+    volgende_ronde = input("Wil je nog een ronde spelen? Typ ja of nee: ")
+    if volgende_ronde == 'ja':
+        print("oké!")
+    elif volgende_ronde == 'nee':
+        print("o, jammer...")
         break
-
-print("#####################################################")
-print("Hartelijk dank voor het spelen van deze ronde.")
-print(f"het woord was   : {te_raden_woord}")
-print(f"door jou geraden: {geraden_van_woord}")
-print("#####################################################")
+    else:
+        input("Typ ja of nee in: ")

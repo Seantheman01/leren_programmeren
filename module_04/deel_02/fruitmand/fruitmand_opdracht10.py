@@ -7,4 +7,4 @@ print(gewichten)
 # for x in fruitmand:
 #     gewichten.append(x['weight'])
 
-# print(sorted(gewichten))
+# print(sorted(gewichten)

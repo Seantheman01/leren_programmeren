@@ -15,7 +15,7 @@ VERSION = "0.1 Draft"
 # todo: uitbreiden met exception handling en een default woord indien file niet beschikbaar.
 with open('woorden.txt', 'r') as file:
     content = file.read()
-    #print(content)
+    # print(content)
 woorden_lijst = content.split('\n')
 te_raden_woord = random.choice(woorden_lijst)
 

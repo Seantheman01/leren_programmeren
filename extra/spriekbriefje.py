@@ -68,3 +68,8 @@
 # while True met een break erachter is een loop en een half (term)
 
 # def betekent definieer/maak aan
+
+# waarom functie:
+# hergebruik eigen of andere pgm
+# logica te verbergen
+# naam  input parm  output

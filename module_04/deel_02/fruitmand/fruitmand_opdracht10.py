@@ -1,3 +1,8 @@
 from fruitmand import fruitmand
 
-print(sorted(fruitmand, key=lambda a:a['weight']))
+gewichten = []
+
+for x in fruitmand:
+    gewichten.append(x['weight'])
+    
+print(gewichten)

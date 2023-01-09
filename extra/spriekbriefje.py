@@ -72,4 +72,4 @@
 # waarom functie:
 # hergebruik eigen of andere pgm
 # logica te verbergen
-# naam  input parm  output
+# naam      input parm      output

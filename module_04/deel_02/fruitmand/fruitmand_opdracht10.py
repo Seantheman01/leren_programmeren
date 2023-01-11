@@ -1,10 +1,6 @@
 from fruitmand import fruitmand
 from operator import itemgetter
 
-gewichten = sorted(fruitmand, key=itemgetter('weight', 'name'))
+gewichten = sorted(fruitmand, key=itemgetter('name', 'weight'))
+    
 print(gewichten)
-
-# for x in fruitmand:
-#     gewichten.append(x['weight'])
-
-# print(sorted(gewichten)
